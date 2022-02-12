@@ -1,0 +1,106 @@
+body {
+	user-select: none;
+	overflow: hidden;
+    margin: 0;
+}
+
+.vertical-center {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/*-------------------------------------------*/
+.headerlogo {
+    font-size: 25px;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.headerlogo:hover {
+    color: rgb(var(--Primary));
+}
+
+.showroom {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 73vh;
+    overflow: hidden;
+}
+
+#carimage {
+    object-fit: contain;
+    width: 70vw;
+    height: auto;
+    max-height: 60vh;
+    border-radius: var(--borderradius-component);
+    box-shadow: var(--component-shadow);
+}
+
+.details {
+    z-index: 3;
+    padding: var(--padding-component);
+    background-color: rgba(var(--OnBackground), var(--dp01));
+    position: absolute;
+    right: 0;
+    bottom: 22vh;
+    width: 20vh;
+    margin-right: 2vw;
+    border-radius: var(--borderradius-component);
+    box-shadow: var(--component-shadow);
+}
+
+.catagaries {
+    height: 5vh;
+    width: 100%;
+}
+
+.carlist {
+    padding-top: 1vh;
+    width: 100%;
+    bottom: 0;
+    height: 22vh;
+    white-space: nowrap;
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carlist div {      
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 35vh;
+    height: 90%;
+    border-radius: var(--borderradius-component);
+    background-color: rgba(var(--OnBackground), var(--dp24));
+    display: inline-block;
+    color: rgba(255,255,255,var(--High-emphasis)) !important;
+    margin-left: 2vw;
+    box-shadow: var(--component-shadow);
+}
+
+.carlist div:last-child {
+    margin-right: 2vw;
+}   
+
+.caritemtitle {
+    position: absolute;
+    bottom: 0;
+    padding: var(--padding-component);
+    background-color: rgba(var(--OnPrimary), 60%);
+    border-radius:  0 var(--borderradius-component) 0 var(--borderradius-component);
+}

@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Tesla",
+        "category": "Electric",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069563321909268/Bodhi-GTAV-front.png.jpg",
+        "details": {
+            "speed": 200,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Tesla Model 3",
+        "category": "Electric",
+        "img": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.fandomspot.com%2Fimages%2F02%2F4814%2F00-featured-custom-car-mods-gta5.jpg&f=1&nofb=1",
+        "details": {
+            "speed": 200,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "BMW",
+        "category": "SUV",
+        "img": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fassets.vg247.com%2Fcurrent%2F2015%2F09%2Fgta_mod_lamborghini.jpg&f=1&nofb=1",
+        "details": {
+            "speed": 100,
+            "breack": 50,
+            "price": 5220,
+            "seats": 2,
+            "trunksize": 50
+        }
+    },
+    {
+        "name": "Caddy",
+        "category": "Sport",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069563527413830/Caddy.png",
+        "details": {
+            "speed": 30,
+            "breack": 50,
+            "price": 1020,
+            "seats": 1,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Dune Buggy",
+        "category": "Sport",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069563825217546/DuneBuggy-GTAV-front.png.jpg",
+        "details": {
+            "speed": 160,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Duneloader",
+        "category": "Sport",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069564018130944/Duneloader-GTAV-front.png.jpg",
+        "details": {
+            "speed": 200,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Journey",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069564232060928/Journey-GTAV-front.png.jpg",
+        "details": {
+            "speed": 200,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Rat Loader",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069564445958196/Rat-Loader-GTAV-front.png.jpg",
+        "details": {
+            "speed": 120,
+            "breack": 50,
+            "price": 2220,
+            "seats": 2,
+            "trunksize": 40
+        }
+    },
+    {
+        "name": "Rusty Rebel",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069564664078396/RustyRebel-GTAV-front.png.jpg",
+        "details": {
+            "speed": 50,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Tornado4",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069565133815848/Tornado4-GTAV-front.png.jpg",
+        "details": {
+            "speed": 50,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Tornado Rat Rod",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069565381308456/TornadoRatRod-GTAO-front.png.jpg",
+        "details": {
+            "speed": 50,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    },
+    {
+        "name": "Voodoo",
+        "category": "Luxus",
+        "img": "https://cdn.discordapp.com/attachments/905451666604711976/942069565591027763/Voodoo-GTAV-front.png.jpg",
+        "details": {
+            "speed": 50,
+            "breack": 50,
+            "price": 2220,
+            "seats": 4,
+            "trunksize": 20
+        }
+    }
+]

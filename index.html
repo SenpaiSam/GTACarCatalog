@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Catalog</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SenpaiSam/CSSFramework@latest/sam-style.min.css">
+<link rel="stylesheet" href="style.css">
+<body dark>
+    <div class="headerlogo"><strong>CAR</strong> CATALOG</div>
+    <button style="position: absolute;right: 10px;top: 10px;z-index: 2;" onclick="OpenModal(this);"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="rgba(var(--OnBackground),var(--Medium-emphasis))"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg></svg></button>
+        <div class="modal">
+            <div class="modal-content" style="width: 40%;">
+                <span onclick="CloseModal()" class="modal-close">×</span>
+                <h1>Thememode</h1>
+                <select class="pointer" style="width: 100%;" onchange="themecolor(this.value)">
+                    <option value="light">light theme</option>
+                    <option value="dark" selected>dark theme</option>
+                    <option value="blue">blue theme</option>
+                    <option value="skin">skin theme</option>
+                    <option value="greyish">greyish theme</option>
+                    </select>
+                <h1>Informationen</h1>
+                <button class="collapsible">Impressum</button>
+                <div class="collapsiblecontent">
+                    <div class="withscrollbarY" style="max-height: 40vh;">
+                        <h1>Title</h1>
+                        <p>Description</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia veritatis quam nobis dignissimos deserunt quaerat neque, natus iusto laboriosam sapiente saepe ad beatae iure, eum accusantium et ab eligendi.</p>
+                    </div>
+                </div>
+                <br><br>
+                <label style="color: rgba(var(--OnBackground),var(--Medium-emphasis));">Made by: Samuel</label><br>
+                <label style="color: rgba(var(--OnBackground),var(--Medium-emphasis));">Copyright &copy; 2022, Samuel B., All rights reserved.</label>
+            </div>
+        </div>
+
+    <div class="showroom">
+        <img id="carimage" class="vertical-center" src="https://via.placeholder.com/550" style="object-fit: cover;"/>
+    </div>
+    <div class="details">
+        <div id="details-item-name" style="font-size:24px"></div>
+        <div id="details-item-catogary" style="margin-top:5px;color: rgba(var(--OnBackground),var(--Disabled-text)) !important"></div>
+        <br>
+        <div style="position: relative;padding: 0;">
+        <label for="progresssliderspeed">Schnelligkeit:</label><br>
+        <input style="margin-top: 20px;" id="progresssliderspeed" type="range" min="0" max="300" step="0.01" value="50" class="slider" disabled showvalue/>
+        <span style="margin-top: 10px;" class="slidertitle"></span>
+        </div>
+        <br>
+        <div style="position: relative;padding: 0;">
+        <label for="progressslidertrunksize">Lagervolumen:</label><br>
+        <input style="margin-top: 20px;" id="progressslidertrunksize" type="range" min="0" max="100" step="0.01" value="50" class="slider" disabled showvalue/>
+        <span style="margin-top: 10px;" class="slidertitle"></span>
+        </div>
+        <br>
+        <label id="details-item-seats"></label>
+        <br><br>
+        <label id="details-item-price"></label>
+    </div>
+    <div class="catagaries" style="position: relative;">
+        <div style="position: absolute; bottom: 0;left: 0;">
+            <nav class="nav" style="margin-left: 2vw;">
+                <a href="#" class="nav-item" onclick="gotocatogary('Motorrad')">Motorrad</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('Grove')">Grove</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('Paleto')">Sandy</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('Paleto')">Paleto</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('PDM')">PDM</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('Luxury')">Luxury</a>
+                <a href="#" class="nav-item" onclick="gotocatogary('LKW')">LKW</a>
+            </nav>
+            <button onclick="OpenModal(this);document.getElementById('inputsearch').focus();"><svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 24 24" width="16px" fill="rgba(var(--OnBackground),var(--Medium-emphasis))"><path d="M0 0h24v24H0z" fill="none" /><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+            <div class="modal">
+                <div class="modal-content" style="width: 40%;">
+                    <span onclick="CloseModal()" class="modal-close">×</span>
+                    <label>Search Catalog</label>
+                    <form id="search-form" onsubmit="return false">
+                        <input type="search" name="nameinput" id="inputsearch" style="width: 100%;" placeholder="Search.."/>
+                      </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="carlist"></div>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/SenpaiSam/CSSFramework@latest/sam-javascript.min.js"></script>
+<script src="data.json"></script>
+<script src="app.js"></script>
+</html>
